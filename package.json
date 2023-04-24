@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "zod": "^3.21.4"
+  },
+  "scripts": {
+    "start:without-zod": "yarn build && node build/createBoat-1-WithoutZod.js ./inputs/input.json",
+    "start:adding-zod": "yarn build && node build/createBoat-2-AddingZod.js ./inputs/input.json",
+    "start:with-zod": "yarn build && node build/createBoat-3-WithZod.js ./inputs/input.json",
+    "build": "rimraf ./build && tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^18.16.0",
+    "fs": "^0.0.1-security",
+    "rimraf": "^5.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "length": 10,
+  "width": "2",
+  "rooms": [
+    {
+      "number": 1,
+      "area": 16,
+      "capacity": 2
+    },
+    {
+      "number": 2,
+      "area": 24
+    }
+  ],
+  "country": "Uruguay"
+}
