@@ -3,9 +3,9 @@
     "zod": "^3.21.4"
   },
   "scripts": {
-    "start:without-zod": "yarn build && node build/createBoat-1-WithoutZod.js ./inputs/input.json",
-    "start:adding-zod": "yarn build && node build/createBoat-2-AddingZod.js ./inputs/input.json",
-    "start:with-zod": "yarn build && node build/createBoat-3-WithZod.js ./inputs/input.json",
+    "start:without-zod": "yarn build && node build/createHotel-1-WithoutZod.js ./inputs/input.json",
+    "start:adding-zod": "yarn build && node build/createHotel-2-AddingZod.js ./inputs/input.json",
+    "start:with-zod": "yarn build && node build/createHotel-3-WithZod.js ./inputs/input.json",
     "build": "rimraf ./build && tsc"
   },
   "devDependencies": {

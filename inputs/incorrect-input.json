@@ -1,6 +1,5 @@
 {
-  "length": 10,
-  "width": "2",
+  "address": 10,
   "rooms": [
     {
       "number": 1,

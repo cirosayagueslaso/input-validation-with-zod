@@ -1,7 +1,6 @@
 {
-  "name": "My Boat",
-  "length": 10,
-  "width": 2,
+  "name": "My Hotel",
+  "address": "123 My Street",
   "rooms": [
     {
       "number": 1,

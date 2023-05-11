@@ -9,10 +9,9 @@ type Room = {
   capacity: number;
 };
 
-type Boat = {
+type Hotel = {
   name: string;
-  length?: number;
-  width?: number;
+  address?: string;
   rooms: Room[];
   country: string | null;
 };
@@ -23,18 +22,16 @@ console.log("[requestBody]", requestBody);
 
 try {
   /**
-   * Input validation: Boat.
+   * Input validation: Hotel.
    */
   if (!requestBody.name) throw new Error("The name is mandatory");
   if (typeof requestBody.name !== "string")
     throw new Error("The name must be a string");
-  if (typeof requestBody.length !== "number")
-    throw new Error("The length must be a number");
-  if (typeof requestBody.width !== "number")
-    throw new Error("The width must be a number");
+  if (typeof requestBody.address !== "string")
+    throw new Error("The address must be a string");
   if (requestBody.country === undefined)
     throw new Error(
-      "The country must be defined, please use null if the boat has no country"
+      "The country must be defined, please use null if the hotel has no country"
     );
 
   /**
@@ -47,9 +44,9 @@ try {
       throw new Error("The capacity is mandatory in the rooms");
   });
 
-  const boat: Boat = requestBody;
+  const hotel: Hotel = requestBody;
 
-  console.log("[boat]", boat);
+  console.log("[hotel]", hotel);
 } catch (error) {
   console.error("Error found:", (error as Error).message);
 }
